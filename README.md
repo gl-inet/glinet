@@ -10,7 +10,7 @@ I assume that you already have a working on imagebuilder, and then add the follo
 src glinet file:glinet/ar71xx
 ```  
 
-Note that *ar71xx* is the board you use. **ar71xx/ramips** are supported.  
+Note that *ar71xx* is the board type you use. **ar71xx/ramips** are supported.  
 
 Finally, downloading this repo to your imagebuilder top directory.  
 
@@ -21,5 +21,6 @@ $ git clone https://github.com/gl-inet/glinet glinet
 Now you can build an image which is integrated with GL.iNet's UI and background
 ipks via PACKAGES variable likes *PACKAGES=ipk-name...*.  
 
-Sunshine!
+Sunshine!  
+
 	https://www.gl-inet.com
