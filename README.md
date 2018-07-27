@@ -22,5 +22,4 @@ Now you can build an image which is integrated with GL.iNet's UI and background
 ipks via PACKAGES variable likes *PACKAGES=ipk-name...*.  
 
 Sunshine!  
-
-	https://www.gl-inet.com
+   https://www.gl-inet.com
