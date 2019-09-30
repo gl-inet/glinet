@@ -103,13 +103,21 @@
 			"profile": "QSDK_Premium",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
+<<<<<<< HEAD
 			"packages": "gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+=======
+			"packages": "gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas kmod-usb-uas"
+>>>>>>> b1300
 		},
 		"s1300": {
 			"profile": "QSDK_Premium",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
+<<<<<<< HEAD
 			"packages": "gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+=======
+			"packages": "gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas kmod-usb-uas"
+>>>>>>> b1300
 		},
 		"vixmini": {
 			"profile": "vixmini",
