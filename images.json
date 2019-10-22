@@ -23,7 +23,7 @@
 		},
 		"mifi": {
 			"profile": "gl-mifi",
-			"version": "3.027",
+			"version": "3.028",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
