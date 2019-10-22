@@ -116,6 +116,12 @@
 			"version": "3.027",
 			"imagebuilder": "3.0/openwrt-imagebuilder-ramips-mt76x8_3.0",
 			"packages": "gl-base-files-mt $basic_vixmini $glinet_vixmini -kmod-mt76 kmod-mt7628 uci2dat -wpad -wpa-cli -unbound -stubby"
-		}
+		},
+		"mv1000-emmc": {
+			"profile": "gl-mv1000-emmc",
+			"version": "3.027",
+			"imagebuilder": "3.1/openwrt-imagebuilder-mvebu-emmc_mv1000_3.1",
+			"packages": "kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -gl-portal -kmod-GobiNet -kmod-GobiSerial -gl-repeater -wpad -wpa-cli -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal haveged"
+        }
 	}
 }
