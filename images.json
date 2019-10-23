@@ -23,7 +23,7 @@
 		},
 		"mifi": {
 			"profile": "gl-mifi",
-			"version": "3.027",
+			"version": "3.028",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
@@ -101,15 +101,15 @@
 		},
 		"b1300": {
 			"profile": "QSDK_Premium",
-			"version": "3.027",
+			"version": "3.029",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
-			"packages": "gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+			"packages": "gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
 		},
 		"s1300": {
 			"profile": "QSDK_Premium",
-			"version": "3.027",
+			"version": "3.029",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
-			"packages": "gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+			"packages": "gl-upload gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
 		},
 		"vixmini": {
 			"profile": "vixmini",
@@ -121,7 +121,7 @@
 			"profile": "gl-mv1000-emmc",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-mvebu-emmc_mv1000_3.1",
-			"packages": "kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -gl-portal -kmod-GobiNet -kmod-GobiSerial -gl-repeater -wpad -wpa-cli -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal haveged"
+			"packages": "gl-upload kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -gl-portal -kmod-GobiNet -kmod-GobiSerial -gl-repeater -wpad -wpa-cli -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal haveged"
         }
 	}
 }
