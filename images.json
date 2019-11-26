@@ -13,19 +13,19 @@
 			"profile": "GL-X1200",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-nand_3.1",
-			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-x1200 $basic $vpn $storage $usb $glinet -gl-ui gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe"
+			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-x1200 $basic $vpn $storage $usb $glinet -gl-ui gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe luci"
 		},
 		"ar150": {
 			"profile": "gl-ar150",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet luci"
 		},
 		"mifi": {
 			"profile": "gl-mifi",
 			"version": "3.028",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet"
+			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet luci"
 		},
 		"e750": {
 			"profile": "GL-E750",
@@ -37,85 +37,85 @@
 			"profile": "gl-ar300m",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet luci"
 		},
 		"ar750": {
 			"profile": "gl-ar750",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet luci"
 		},
 		"x750": {
 			"profile": "gl-x750",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal"
+			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal luci"
 		},
 		"usb150": {
 			"profile": "gl-usb150",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $glinet mwan3 -gl-modem"
+			"packages": "gl-base-files-ar $basic $vpn $glinet mwan3 -gl-modem luci"
 		},
 		"ar300m": {
 			"profile": "GL-AR300M",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-nand_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k luci"
 		},
 		"ar750s": {
 			"profile": "GL-AR750S",
-			"version": "3.029",
+			"version": "3.100",
 			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-nand_3.2",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe luci"
 		},
 		"ar750sm16": {
 			"profile": "gl-ar750s",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe"
+			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe luci"
 		},
 		"mt300a": {
 			"profile": "gl-mt300a",
 			"version": "3.027",
 			"imagebuilder": "3.0/openwrt-imagebuilder-ramips-mt7620_3.0",
-			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt $basic $vpn $storage $usb kmod-mmc kmod-sdhci kmod-sdhci-mt7620 -kmod-GobiNet -kmod-GobiSerial"
+			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt $basic $vpn $storage $usb kmod-mmc kmod-sdhci kmod-sdhci-mt7620 -kmod-GobiNet -kmod-GobiSerial luci"
 		},
 		"mt300n": {
 			"profile": "gl-mt300n",
 			"version": "3.027",
 			"imagebuilder": "3.0/openwrt-imagebuilder-ramips-mt7620_3.0",
-			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt $basic $vpn $storage $usb -kmod-GobiNet -kmod-GobiSerial"
+			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt $basic $vpn $storage $usb -kmod-GobiNet -kmod-GobiSerial luci"
 		},
 		"mt300n-v2": {
 			"profile": "gl-mt300n-v2",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ramips-mt76x8_3.1",
-			"packages": "$glinet -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb"
+			"packages": "$glinet -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb luci"
 		},
 		"n300": {
 			"profile": "microuter-n300",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ramips-mt76x8_3.1",
-			"packages": "$glinet -gl-ui gl-ui-n300 gl-files-brower -gl-modem -gl-portal -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial"
+			"packages": "$glinet -gl-ui gl-ui-n300 gl-files-brower -gl-modem -gl-portal -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial luci"
 		},
 		"b1300": {
 			"profile": "QSDK_Premium",
 			"version": "3.029",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
-			"packages": "gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+			"packages": "gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas luci"
 		},
 		"s1300": {
 			"profile": "QSDK_Premium",
 			"version": "3.029",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
-			"packages": "gl-upload gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas"
+			"packages": "gl-upload gl-wifison gl-base-files-ipq gl-ble-api gl-ble-daemon $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas luci"
 		},
 		"vixmini": {
 			"profile": "vixmini",
 			"version": "3.027",
 			"imagebuilder": "3.0/openwrt-imagebuilder-ramips-mt76x8_3.0",
-			"packages": "gl-base-files-mt $basic_vixmini $glinet_vixmini -kmod-mt76 kmod-mt7628 uci2dat -wpad -wpa-cli -unbound -stubby"
+			"packages": "gl-base-files-mt $basic_vixmini $glinet_vixmini -kmod-mt76 kmod-mt7628 uci2dat -wpad -wpa-cli -unbound -stubby luci"
 		},
 		"mv1000-emmc": {
 			"profile": "gl-mv1000-emmc",
