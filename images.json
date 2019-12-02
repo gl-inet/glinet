@@ -121,7 +121,7 @@
 			"profile": "gl-mv1000-emmc",
 			"version": "3.027",
 			"imagebuilder": "3.1/openwrt-imagebuilder-mvebu-emmc_mv1000_3.1",
-			"packages": "gl-upload kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -gl-portal -kmod-GobiNet -kmod-GobiSerial -gl-repeater -wpad -wpa-cli -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal haveged"
+			"packages": "kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -gl-portal -kmod-GobiNet -kmod-GobiSerial -gl-repeater -wpad -wpa-cli -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal haveged"
         }
 	}
 }
