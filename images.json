@@ -30,7 +30,7 @@
 		"e750": {
 			"profile": "GL-E750",
 			"version": "3.027",
-			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-nand_e750_3.1",
+			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-nand_3.2",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-e750 $basic $vpn $storage $usb $glinet gl-e750-mcu gl-ble-daemon gl-ble-api"
 		},
 		"ar300m16": {
