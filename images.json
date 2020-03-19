@@ -90,13 +90,13 @@
 		"mt300n-v2": {
 			"profile": "gl-mt300n-v2",
 			"version": "3.102",
-			"imagebuilder": "3.2/openwrt-imagebuilder-ramips-mt76x8_3.2",
+			"imagebuilder": "3.3/openwrt-imagebuilder-ramips-mt76x8_3.3",
 			"packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb"
 		},
 		"n300": {
 			"profile": "microuter-n300",
 			"version": "3.102",
-			"imagebuilder": "3.1/openwrt-imagebuilder-ramips-mt76x8_3.1",
+			"imagebuilder": "3.3/openwrt-imagebuilder-ramips-mt76x8_3.3",
 			"packages": "luci luci-mod-rpc $glinet -gl-ui gl-ui-n300 gl-files-brower -gl-modem -gl-portal -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial"
 		},
 		"b1300": {
