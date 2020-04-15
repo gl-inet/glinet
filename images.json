@@ -120,7 +120,7 @@
 		"mv1000-emmc": {
 			"profile": "gl-mv1000-emmc",
 			"version": "3.102",
-			"imagebuilder": "3.1/openwrt-imagebuilder-mvebu-emmc_mv1000_3.1",
+			"imagebuilder": "3.2/openwrt-imagebuilder-mvebu-emmc_mv1000_3.2",
 			"packages": "kmod-8192eu kmod-8812au kmod-8821cu kmod-8811au kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -kmod-GobiNet -kmod-GobiSerial -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal gl-tor haveged usbutils wpa-cli wpad"
 		}
 	}
