@@ -12,8 +12,8 @@
 		"x1200": {
 			"profile": "GL-X1200",
 			"version": "3.104",
-			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-nand_3.2",
-			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-x1200 $basic $vpn $storage $usb $glinet -gl-ui gl-tor gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe"
+			"imagebuilder": "3.3/openwrt-imagebuilder-ar71xx-nand_3.3",
+			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-x1200 $basic $vpn $storage $usb $glinet gl-ui gl-tor -gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe"
 		},
 		"ar150": {
 			"profile": "gl-ar150",
@@ -48,7 +48,7 @@
 		"x750": {
 			"profile": "gl-x750",
 			"version": "3.104",
-			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
+			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-generic_3.2",
 			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal gl-tor"
 		},
 		"usb150": {
@@ -97,7 +97,7 @@
 			"profile": "microuter-n300",
 			"version": "3.102",
 			"imagebuilder": "3.3/openwrt-imagebuilder-ramips-mt76x8_3.3",
-			"packages": "luci luci-mod-rpc $glinet gl-ui -gl-ui-n300 gl-files-brower -gl-modem -gl-portal -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial"
+			"packages": "luci luci-mod-rpc $glinet gl-ui -gl-ui-n300 gl-files-brower -gl-modem gl-portal -gl-qos gl-qos-internal -gl-tertf gl-tertf-mt76x8 gl-base-files-mt -kmod-mt76 kmod-mt7628 $basic $vpn -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial"
 		},
 		"b1300": {
 			"profile": "QSDK_Premium",
