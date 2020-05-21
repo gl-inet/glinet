@@ -19,13 +19,13 @@
 			"profile": "gl-ar150",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet gl-tor"
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"mifi": {
 			"profile": "gl-mifi",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet gl-tor"
+			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"e750": {
 			"profile": "GL-E750",
@@ -36,31 +36,31 @@
 		"ar300m16": {
 			"profile": "gl-ar300m",
 			"version": "3.104",
-			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet gl-tor"
+			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-generic_3.2",
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"ar750": {
 			"profile": "gl-ar750",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet gl-tor"
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"x750": {
 			"profile": "gl-x750",
 			"version": "3.104",
 			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-generic_3.2",
-			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal gl-tor"
+			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal"
 		},
 		"usb150": {
 			"profile": "gl-usb150",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $glinet mwan3 -gl-modem gl-tor"
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $glinet mwan3 -gl-modem"
 		},
 		"ar300m": {
 			"profile": "GL-AR300M",
 			"version": "3.104",
-			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-nand_3.2",
+			"imagebuilder": "3.3/openwrt-imagebuilder-ar71xx-nand_3.3",
 			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k gl-tor"
 		},
 		"ar750s": {
@@ -73,7 +73,7 @@
 			"profile": "gl-ar750s",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor"
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe"
 		},
 		"mt300a": {
 			"profile": "gl-mt300a",
