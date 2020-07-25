@@ -67,7 +67,7 @@
 			"profile": "GL-AR750S",
 			"version": "3.104",
 			"imagebuilder": "3.3/openwrt-imagebuilder-ar71xx-nand_3.3",
-			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor"
+			"packages": "luci luci-mod-rpc gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor gl-agh-stats"
 		},
 		"ar750sm16": {
 			"profile": "gl-ar750s",
