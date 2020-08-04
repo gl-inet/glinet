@@ -48,8 +48,8 @@
 		"x750": {
 			"profile": "gl-x750",
 			"version": "3.104",
-			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_3.1",
-			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal gl-tor"
+			"imagebuilder": "3.2/openwrt-imagebuilder-ar71xx-generic_3.2",
+			"packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-ble-api gl-ble-daemon $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal"
 		},
 		"usb150": {
 			"profile": "gl-usb150",
