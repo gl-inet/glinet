@@ -61,7 +61,7 @@
 			"profile": "gl-x300b",
 			"version": "3.104",
 			"imagebuilder": "3.1/openwrt-imagebuilder-ar71xx-generic_x300b_3.1",
-			"packages": "gl-base-files-ar gl-base-files-x300b  $basic $vpn $usb $glinet gl-upload  gl-rs485 -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal -luci -luci-mod-rpc"  
+			"packages": "gl-base-files-ar gl-base-files-x300b  $basic $vpn $usb $glinet gl-upload  gl-rs485 kmod-gl-hw-wdt  -gl-qos gl-qos-internal -gl-tertf gl-tertf-internal -luci -luci-mod-rpc"  
 		},
 		"usb150": {
 			"profile": "gl-usb150",
