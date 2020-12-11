@@ -103,7 +103,7 @@
 			"profile": "gl-mt1300",
 			"version": "3.200",
 			"imagebuilder": "3.0/openwrt-imagebuilder-ramips-mt7621_3.0",
-			"packages": "$basic $storage $usb $glinet $vpn kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl uci2dat -luci -luci-mod-rpc gl-ble-ubus gl-ble_config_wifi gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620"
+			"packages": "$basic $storage $usb $glinet $vpn kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl uci2dat -luci -luci-mod-rpc gl-ble-ubus gl-ble_config_wifi gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload"
 		},
 		"b1300": {
 			"profile": "QSDK_Premium",
