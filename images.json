@@ -132,9 +132,9 @@
 		"b2200": {
 			"profile": "QSDK_Premium",
 			"version": "3.107",
-			"imagebuilder": "3.1/offical_imagebuilder",
+			"imagebuilder": "3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1",
 			"packages": "qca-wifi-fw-hw11-10.4-asic luci luci-mod-rpc gl-wifison gl-base-files-ipq gl-ble_config_wifi gl-bletool gl-ble-ubus $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor kmod-i2c-gpio-custom AdGuardHome gl-agh-stats gl-traffic -lighttpd-mod-openssl",
-			"files": "imagebuilder/3.1/offical_imagebuilder/files"
+			"files": "imagebuilder/3.1/openwrt-imagebuilder-ipq806x-QSDK_Premium_3.1/files"
 		}
 	}
 }
