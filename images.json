@@ -6,7 +6,9 @@
 		"usb": "kmod-usb-storage-uas kmod-usb-storage kmod-usb-uhci kmod-usb2 kmod-usb-ohci kmod-usb-acm kmod-usb-net-huawei-cdc-ncm comgt chat comgt-directip comgt-ncm kmod-usb-serial kmod-usb-serial-cp210x kmod-usb-serial-option kmod-usb-serial-wwan kmod-usb-serial-sierrawireless kmod-rt2800-usb usb-modeswitch kmod-mppe kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-net-qmi-wwan uqmi kmod-usb-net-ipheth libusbmuxd libimobiledevice usbmuxd",
 		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-brower gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 rtty-openssl gl-upload",
 		"glinet_vixmini": "gl-sdk gl-base-files -gl-files-brower gl-firewall gl-repeater gl-software -gl-ui gl-ui-vixmini gl-util gl-wan-detect gl-wifi-core gl-monitor",
-		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3"
+		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3",
+		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read",
+		"basic_sf1200": "ip-full ip-tiny curl lighttpd lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy kmod-crypto-crc32c kmod-crypto-hash kmod-fuse kmod-lib-crc16 kmod-lib-textsearch kmod-libphy kmod-mac80211 kmod-nf-conntrack-netlink kmod-nf-nathelper-extra kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-swconfig hostapd-common hostapd-scripts ipset iwinfo mwan3 wpa-cli wpad-openssl uclibcxx terminfo snapshot-tool rpcd-mod-iwinfo rpcd-mod-file rpcd libstdcpp libss libnl libncurses libnet-1.2.x libext2fs libcomerr libcares libblkid libattr libacl e2fsprogs zlib libnfnetlink libnetfilter-queue libnetfilter-cttimeout libnetfilter-cthelper libnetfilter-conntrack libev libustream-openssl  ca-bundle ca-certificates"
 	},
 	"profiles": {
 		"x1200": {
@@ -315,7 +317,13 @@
                         "version": "VB_3.201",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
                         "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-bletool gl-agh-stats openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
-                }
+                },
+		"sf1200": {
+			"profile": "SF19A28-GL-SF1200",
+			"version": "3.202",
+			"imagebuilder": "3.5/openwrt-imagebuilder-siflower-sf19a28_3.5",
+			"packages": "-kmod-leds-gpio gl-software rtty-openssl gl-base-files gl-base-files-sf gl-cloud-ui gl-ddns gl-firewall gl-fw gl-ipv6 gl-monitor gl-mqtt gl-qos-internal gl-repeater gl-sdk gl-tertf gl-traffic gl-ui gl-util gl-wan-detect gl-wifi-core $basic_sf1200 $siflower_driver"
+		}
 
 	}
 }
