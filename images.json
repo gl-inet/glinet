@@ -7,8 +7,7 @@
 		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-brower gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 rtty-openssl gl-upload",
 		"glinet_vixmini": "gl-sdk gl-base-files -gl-files-brower gl-firewall gl-repeater gl-software -gl-ui gl-ui-vixmini gl-util gl-wan-detect gl-wifi-core gl-monitor",
 		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3",
-		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read",
-		"basic_sf1200": "ip-full ip-tiny curl lighttpd lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy kmod-crypto-crc32c kmod-crypto-hash kmod-fuse kmod-lib-crc16 kmod-lib-textsearch kmod-libphy kmod-mac80211 kmod-nf-conntrack-netlink kmod-nf-nathelper-extra kmod-nls-base kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-swconfig hostapd-common hostapd-scripts ipset iwinfo mwan3 wpa-cli wpad-openssl uclibcxx terminfo snapshot-tool rpcd-mod-iwinfo rpcd-mod-file rpcd libstdcpp libss libnl libncurses libnet-1.2.x libext2fs libcomerr libcares libblkid libattr libacl e2fsprogs zlib libnfnetlink libnetfilter-queue libnetfilter-cttimeout libnetfilter-cthelper libnetfilter-conntrack libev libustream-openssl  ca-bundle ca-certificates"
+		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read kmod-mac80211 libnl hostapd-scripts e2fsprogs kmod-crypto-crc32c kmod-fuse kmod-lib-crc16 kmod-swconfig libacl libncurses libnet-1.2.x libnetfilter-cthelper libnetfilter-cttimeout libnetfilter-queue libstdcpp snapshot-tool uclibcxx rpcd-mod-iwinfo rpcd-mod-file rpcd libcares"
 	},
 	"profiles": {
 		"x1200": {
@@ -320,9 +319,9 @@
                 },
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
-			"version": "3.202",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-siflower-sf19a28_3.5",
-			"packages": "-kmod-leds-gpio gl-software rtty-openssl gl-base-files gl-base-files-sf gl-cloud-ui gl-ddns gl-firewall gl-fw gl-ipv6 gl-monitor gl-mqtt gl-qos-internal gl-repeater gl-sdk gl-tertf gl-traffic gl-ui gl-util gl-wan-detect gl-wifi-core $basic_sf1200 $siflower_driver"
+			"packages": "-kmod-leds-gpio -gl-portal -gl-portal -gl-modem -gl-upload gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
 		}
 
 	}
