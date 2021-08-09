@@ -7,7 +7,7 @@
 		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-brower gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 rtty-openssl gl-upload",
 		"glinet_vixmini": "gl-sdk gl-base-files -gl-files-brower gl-firewall gl-repeater gl-software -gl-ui gl-ui-vixmini gl-util gl-wan-detect gl-wifi-core gl-monitor",
 		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3",
-		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read kmod-mac80211 libnl hostapd-scripts e2fsprogs kmod-crypto-crc32c kmod-fuse kmod-lib-crc16 kmod-swconfig libacl libncurses libnet-1.2.x libnetfilter-cthelper libnetfilter-cttimeout libnetfilter-queue libstdcpp snapshot-tool uclibcxx rpcd-mod-iwinfo rpcd-mod-file rpcd libcares"
+		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read kmod-mac80211 libnl hostapd-scripts e2fsprogs kmod-crypto-crc32c kmod-fuse kmod-lib-crc16 kmod-swconfig libacl libncurses libnet-1.2.x libnetfilter-cthelper libnetfilter-cttimeout libnetfilter-queue snapshot-tool libcares"
 	},
 	"profiles": {
 		"x1200": {
@@ -319,9 +319,9 @@
                 },
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
-			"version": "3.203",
+			"version": "3.204",
 			"imagebuilder": "3.5/openwrt-imagebuilder-siflower-sf19a28_3.5",
-			"packages": "-kmod-leds-gpio -gl-portal -gl-portal -gl-modem -gl-upload gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
+			"packages": "-kmod-leds-gpio -ubi-utils -gl-portal -gl-modem -gl-upload gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
 		}
 
 	}
