@@ -13,14 +13,16 @@
 		"x1200": {
 			"state": "develop",
 			"profile": "glinet_gl-x1200-nor-nand",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-x1200 $basic $vpn $storage $usb $glinet gl-ui gl-tor -gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe gl-upload rtty-openssl ath10k-firmware-qca9888-ct-htt -ath10k-firmware-qca9888 kmod-ath10k-ct -kmod-ath10k"
 		},
 		"x1200_2b": {
                         "state": "develop",
                         "profile": "glinet_gl-x1200-nor-nand",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
+			"disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
                         "packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-wbf gl-base-files-x1200 $basic $vpn $storage $usb $glinet -gl-ui gl-2b-ui gl-tor -gl-ui-x1200 -gl-qos gl-qos-internal gl-gps gl-uart kmod-fast-classifier kmod-shortcut-fe gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf ath10k-firmware-qca9888-ct-htt -ath10k-firmware-qca9888 kmod-ath10k-ct -kmod-ath10k"
@@ -28,60 +30,66 @@
 		"ar150": {
 			"state": "testing",
 			"profile": "glinet_gl-ar150",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"ar150_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-ar150",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
+			"disabled": 1,
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
                         "packages": "luci luci-mod-rpc gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"mifi": {
 			"state": "testing",
 			"profile": "glinet_gl-mifi",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet rtty-openssl"
 		},
 		"mifi_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-mifi",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
+			"disabled": 1,
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
                         "packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet rtty-opensslopenvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"e750": {
 			"state": "testing",
 			"profile": "glinet_gl-e750-nor-nand",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-e750 $basic $vpn $storage $usb $glinet gl-e750-mcu gl-tor gl-upload rtty-openssl"
 		},
 		"e750_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-e750-nor-nand",
-                        "version": "VB_3.201",
-                        "disabled": 1,
+                        "version": "VB_3.203",
+                        "disabled": 0,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-                        "packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-e750 gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-e750-mcu gl-tor gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-e750 gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-e750-mcu gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"ar300m16": {
 			"state": "testing",
 			"profile": "glinet_gl-ar300m-nor",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"ar300m16_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-ar300m-nor",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
                         "disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
@@ -90,44 +98,49 @@
 		"ar750": {
 			"state": "testing",
 			"profile": "glinet_gl-ar750",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
 		},
 		"ar750_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-ar750",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
+			"disabled": 1,
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
                         "packages": "luci luci-mod-rpc gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"x750": {
 			"state": "testing",
 			"profile": "glinet_gl-x750-nor",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-bletool $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal rtty-openssl gl-upload"
 		},
 		"x750_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-x750-nor",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
+			"disabled": 0,
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-                        "packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-wbf gl-bletool $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal rtty-openssl gl-upload openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "luci luci-mod-rpc kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-wbf gl-bletool $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal rtty-openssl gl-upload openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env"
                 },
 		"usb150": {
 			"state": "testing",
 			"profile": "glinet_gl-usb150",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $glinet -mwan3 -gl-modem"
 		},
 		"usb150_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-usb150",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
                         "disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
@@ -136,126 +149,143 @@
 		"ar300m": {
 			"state": "testing",
 			"profile": "glinet_gl-ar300m-nand",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k gl-tor"
 		},
 		"ar300m_2b": {
                         "state": "testing",
+			"disabled": 1,
                         "profile": "glinet_gl-ar300m-nand",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
                         "packages": "luci luci-mod-rpc gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k gl-tor gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"ar750s": {
 			"state": "testing",
+			"disabled": 0,
 			"profile": "glinet_gl-ar750s-nor-nand",
-			"version": "3.201",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor gl-upload rtty-openssl"
 		},
 		"ar750s_2b": {
                         "state": "testing",
+			"disabled": 0,
                         "profile": "glinet_gl-ar750s-nor-nand",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-                        "packages": "luci luci-mod-rpc gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "luci luci-mod-rpc gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env"
                 },
 		"mt1300": {
 			"state": "testing",
 			"disabled": 0,
 			"profile": "gl-mt1300",
-			"version": "3.201",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt7621_3.5",
-			"packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl mt7615-uci2dat  gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload rtty-openssl"
+			"packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl   gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom -i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload rtty-openssl -kmod-usb-storage-uas"
 		},
 		"mt1300_2b": {
                         "state": "testing",
-                        "disabled": 0,
+                        "disabled": 1,
                         "profile": "gl-mt1300",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt7621_3.5",
-                        "packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt gl-base-files-wbf -wpad-basic -lighttpd-mod-openssl mt7615-uci2dat -luci -luci-mod-rpc gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt gl-base-files-wbf -wpad-basic -lighttpd-mod-openssl gl-sdk4-mtk-wifi-script -luci -luci-mod-rpc gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"mt300n-v2": {
 			"state": "testing",
 			"disabled": 0,
 			"profile": "gl-mt300n-v2",
-			"version": "3.201",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt76x8_3.5",
-			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl"
+			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-wifi-script"
 		},
 		"mt300n-v2_2b": {
                         "state": "testing",
                         "disabled": 0,
                         "profile": "gl-mt300n-v2",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt76x8_3.5",
-                        "packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt gl-base-files-wbf -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl minidlna gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt gl-base-files-wbf -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env gl-sdk4-mtk-wifi-script"
                 },
 		"n300": {
 			"state": "testing",
 			"disabled": 0,
 			"profile": "microuter-n300",
-			"version": "3.201",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt76x8_3.5",
-			"packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl"
+			"packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-wifi-script"
 		},
 		"n300_2b": {
                         "state": "testing",
                         "disabled": 0,
                         "profile": "microuter-n300",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
                         "disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt76x8_3.5",
-                        "packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt gl-base-files-wbf -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "luci luci-mod-rpc $glinet -gl-qos gl-qos-internal gl-base-files-mt gl-base-files-wbf -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-sdk4-mtk-wifi-script"
                 },
 		"x300b": {
 			"state": "testing",
 			"profile": "glinet_gl-x300b-nor",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-			"packages": "gl-base-files-ar gl-base-files-x300b gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl"
+			"packages": "gl-base-files-ar gl-base-files-x300b gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor -luci  gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl"
+		},
+		"x300b-nand": {
+			"state": "testing",
+			"profile": "glinet_gl-x300b-nor-nand",
+			"version": "3.203",
+			"disabled": 0,
+			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
+			"packages": "gl-base-files-ar gl-base-files-x300b gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor -luci  gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl"
 		},
                 "x300b_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-x300b-nor",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
 			"type": "2B",
+			"disabled": 0,
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-                        "packages": "gl-base-files-ar gl-base-files-x300b gl-base-files-wbf gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "gl-base-files-ar gl-base-files-x300b gl-base-files-wbf gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env"
                 },
 		"xe300": {
 			"state": "testing",
 			"profile": "glinet_gl-xe300-nor-nand",
-			"version": "3.201",
+			"version": "3.203",
+			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 ssmtp"
 		},
 		"xe300_2b": {
                         "state": "testing",
                         "profile": "glinet_gl-xe300-nor-nand",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
+			"disabled": 0,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
-                        "packages": "gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 ssmtp openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "gl-base-files-ar gl-base-files-wbf $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 ssmtp openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env"
                 },
 		"xe300-iot": {
 			"state": "testing",
 			"profile": "glinet_gl-xe300-iot",
-			"version": "3.201",
+			"disabled": 0,
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ath79-nand_3.5",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor -luci gl-xe300-mcu gl-upload gl-ipv6 rtty-openssl -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 ssmtp gl-bletool"
 		},
 		"mv1000-emmc": {
 			"state": "develop",
 			"profile": "gl-mv1000-emmc",
-			"version": "3.201",
+			"version": "3.203",
 			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-mvebu-emmc-19075_mv1000_3.5",
 			"packages": "kmod-8192eu kmod-8812au kmod-8821cu kmod-8811au kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -kmod-GobiNet -kmod-GobiSerial -gl-qos gl-qos-internal gl-tertf gl-tor haveged usbutils wpa-cli luci luci-mod-rpc AdGuardHome gl-agh-stats"
@@ -263,32 +293,33 @@
 		"mv1000-emmc_2b": {
                         "state": "develop",
                         "profile": "gl-mv1000-emmc",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
                         "disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-mvebu-emmc-19075_mv1000_3.5",
                         "packages": "kmod-8192eu kmod-8812au kmod-8821cu kmod-8811au kmod-usb-gadget-eth gl-base-files-mv1000 gl-base-files-wbf $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -kmod-GobiNet -kmod-GobiSerial -gl-qos gl-qos-internal gl-tertf gl-tor haveged usbutils wpa-cli luci luci-mod-rpc AdGuardHome gl-agh-stats gl-upload rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"ap1300": {
-			"state": "develop",
+			"state": "testing",
 			"profile": "QSDK_Premium",
-			"version": "3.201",
+			"version": "3.203",
 			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
-			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ble-api gl-ble-daemon AdGuardHome gl-agh-stats luci luci-mod-rpc kmod-gl-hw-wdt kmod-rtc-sd2068 kmod-i2c-gpio-custom gl-agh-stats"
+			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-ble-api gl-ble-daemon gl-agh-stats luci luci-mod-rpc kmod-gl-hw-wdt kmod-rtc-sd2068 kmod-i2c-gpio-custom gl-agh-stats"
 		},
 		"ap1300_2b": {
-                        "state": "develop",
+                        "state": "testing",
                         "profile": "QSDK_Premium",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
+			"disabled": 1,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
                         "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ble-api gl-ble-daemon AdGuardHome gl-agh-stats luci luci-mod-rpc kmod-gl-hw-wdt kmod-rtc-sd2068 kmod-i2c-gpio-custom gl-agh-stats openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
                 },
 		"b1300": {
-			"state": "develop",
+			"state": "testing",
 			"profile": "QSDK_Premium",
-			"version": "3.201",
+			"version": "3.203",
 			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl"
@@ -296,27 +327,29 @@
 		"b1300_2b": {
                         "state": "develop",
                         "profile": "QSDK_Premium",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
+			"disabled": 0,
 			"type": "2B",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
-                        "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
+                        "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas rtty-openssl openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui gl-2b-env"
                 },
 		"s1300": {
-			"state": "develop",
+			"state": "testing",
 			"disabled": 0,
 			"profile": "QSDK_Premium",
-			"version": "3.201",
+			"version": "3.203",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
-			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-bletool gl-agh-stats"
+			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-ble-api gl-ble-daemon gl-agh-stats"
 		},
 		"s1300_2b": {
                         "state": "develop",
 			"type": "2B",
+			"disabled": 1,
                         "profile": "QSDK_Premium",
-                        "version": "VB_3.201",
+                        "version": "VB_3.203",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
                         "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-bletool gl-agh-stats openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
-                },
+        },
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
 			"version": "3.204",
