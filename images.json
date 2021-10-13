@@ -355,7 +355,12 @@
 			"version": "3.204",
 			"imagebuilder": "3.5/openwrt-imagebuilder-siflower-sf19a28_3.5",
 			"packages": "-kmod-leds-gpio -ubi-utils -gl-portal -gl-modem -gl-upload gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
+		},
+		"ax1800": {
+			"profile": "QSDK_Premium",
+			"version": "3.206",
+			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq60xx-QSDK_Premium_3.5",
+			"packages": "-wpad-openssl gl-ble-ubus gl-ble_cfg_ax1800 gl-agh-stats gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ipv6 bridge luci luci-mod-rpc kmod-i2c-gpio-custom"
 		}
-
 	}
 }
