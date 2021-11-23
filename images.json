@@ -349,7 +349,7 @@
                         "version": "VB_3.203",
                         "imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
                         "packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq gl-base-files-wbf $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl gl-bletool gl-agh-stats openvswitch kmod-openvswitch-intree gl-xwf -gl-ui gl-2b-ui"
-        },
+                },
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
 			"version": "3.204",
