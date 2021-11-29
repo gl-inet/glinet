@@ -201,9 +201,9 @@
 			"state": "testing",
 			"disabled": 0,
 			"profile": "gl-mt300n-v2",
-			"version": "3.203",
-			"imagebuilder": "3.5/openwrt-imagebuilder-ramips-mt76x8_3.5",
-			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-wifi-script"
+			"version": "3.211",
+			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt76x8_3.8",
+			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-apcli mt76x8-uci2dat"
 		},
 		"mt300n-v2_2b": {
                         "state": "testing",
