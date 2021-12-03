@@ -356,6 +356,12 @@
 			"imagebuilder": "3.6/openwrt-imagebuilder-siflower-sf19a28_3.6",
 			"packages": "-kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
 		},
+		"sft1200": {
+			"profile": "SF19A28-GL-SFT1200",
+			"version": "3.206",
+			"imagebuilder": "3.6/openwrt-imagebuilder-siflower-sf19a28-nand_3.6",
+			"packages": "-kmod-leds-gpio blockdev gl-base-files-sf gl-tor $basic $vpn $storage $usb $glinet $siflower_driver"
+		},
 		"ax1800": {
 			"profile": "QSDK_Premium",
 			"version": "3.206",
