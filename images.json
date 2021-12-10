@@ -364,7 +364,7 @@
 		},
 		"ax1800": {
 			"profile": "QSDK_Premium",
-			"version": "3.206",
+			"version": "3.207",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq60xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-ble-ubus gl-ble_cfg_ax1800 gl-agh-stats gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ipv6 bridge luci luci-mod-rpc kmod-i2c-gpio-custom"
 		}
