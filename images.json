@@ -107,7 +107,7 @@
 		},
 		"n300": {
 			"state": "develop",
-			"disabled": 0,
+			"disabled": 1,
 			"profile": "microuter-n300",
 			"version": "3.211",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt76x8_3.8",
@@ -157,7 +157,7 @@
 			"state": "develop",
 			"profile": "QSDK_Premium",
 			"version": "3.211",
-			"disabled": 0,
+			"disabled": 1,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty gl-ble-api gl-ble-daemon gl-agh-stats luci luci-mod-rpc kmod-gl-hw-wdt kmod-rtc-sd2068 kmod-i2c-gpio-custom gl-agh-stats smstools3 ssmtp"
 		},
