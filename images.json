@@ -207,9 +207,9 @@
 		},
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
-			"version": "3.207",
-			"imagebuilder": "3.7/openwrt-imagebuilder-siflower-sf19a28_3.7",
-			"packages": "-kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
+			"version": "3.212",
+			"imagebuilder": "3.8/openwrt-imagebuilder-siflower-sf19a28_3.8",
+			"packages": "-gl-init-portal -gl-siderouter -kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic gl-sdk4-carrier-monitor $basic $vpn $glinet $siflower_driver"
 			},
 		"sft1200": {
 			"profile": "SF19A28-GL-SFT1200",
