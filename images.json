@@ -95,7 +95,7 @@
 			"disabled": 0,
 			"profile": "gl-mt1300",
 			"version": "3.212",
-			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt7621-newdriver_3.8",
+			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt7621_3.8",
 			"packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload gl-rtty gl-sdk4-mtk-wifi gl-sdk4-mtk-apcli -i2c-tools luci luci-mod-rpc luci-base"
 		},
 		"mt300n-v2": {
