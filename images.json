@@ -1,13 +1,14 @@
 {
 	"packages": {
-		"basic": "libustream-openssl -dnsmasq dnsmasq-full -wpad-mini iwinfo kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-nf-nathelper kmod-nf-nathelper-extra ethtool fcgi lighttpd lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli bridge ip-full -unbound stubby mwan3 -wpad-basic wpad-openssl -PCI_SUPPORT -luci -luci-mod-rpc ipset",
+		"basic": "libustream-openssl -dnsmasq dnsmasq-full -wpad-mini iwinfo kmod-nls-cp437 kmod-nls-iso8859-1 kmod-nls-utf8 kmod-nf-nathelper kmod-nf-nathelper-extra ethtool fcgi lighttpd lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli bridge ip-full -unbound stubby mwan3 -wpad-basic wpad-openssl -PCI_SUPPORT  ipset",
 		"vpn": "openvpn-openssl wireguard gl-wg gl-wg-server gl-vpn gl-vpn-server -gl-ss -gl-ss-server",
 		"storage": "blkid kmod-fs-ext4 kmod-fs-ntfs kmod-fs-vfat kmod-fs-exfat ntfs-3g -samba36-server -minidlna",
 		"usb": "kmod-usb-storage-uas kmod-usb-storage kmod-usb-uhci kmod-usb2 kmod-usb-ohci kmod-usb-acm kmod-usb-net-huawei-cdc-ncm comgt chat comgt-directip comgt-ncm kmod-usb-serial kmod-usb-serial-cp210x kmod-usb-serial-option kmod-usb-serial-wwan kmod-usb-serial-sierrawireless kmod-rt2800-usb usb-modeswitch kmod-mppe kmod-usb-net kmod-usb-net-cdc-ether kmod-usb-net-rndis kmod-usb-net-qmi-wwan uqmi kmod-usb-net-ipheth libusbmuxd libimobiledevice usbmuxd",
-		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-browser gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 gl-rtty gl-upload gl-init-portal gl-siderouter",
+		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-browser gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 gl-rtty gl-upload gl-siderouter mudial",
 		"glinet_vixmini": "gl-sdk gl-base-files -gl-files-browser gl-firewall gl-repeater gl-software -gl-ui gl-ui-vixmini gl-util gl-wan-detect gl-wifi-core gl-monitor",
 		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3",
 		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read kmod-mac80211 libnl hostapd-scripts e2fsprogs kmod-crypto-crc32c kmod-fuse kmod-lib-crc16 kmod-swconfig libacl libncurses libnet-1.2.x libnetfilter-cthelper libnetfilter-cttimeout libnetfilter-queue snapshot-tool libcares"
+
 	},
 	"profiles": {
 		"x1200": {
@@ -21,7 +22,7 @@
 		"ar150": {
 			"state": "develop",
 			"profile": "glinet_gl-ar150",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
@@ -29,7 +30,7 @@
 		"mifi": {
 			"state": "develop",
 			"profile": "glinet_gl-mifi",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar $basic $vpn $storage $usb $glinet gl-rtty smstools3 ssmtp"
@@ -37,7 +38,7 @@
 		"e750": {
 			"state": "develop",
 			"profile": "glinet_gl-e750-nor-nand",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-base-files-e750 $basic $vpn $storage $usb $glinet gl-e750-mcu gl-tor gl-upload gl-rtty smstools3 ssmtp luci luci-mod-rpc luci-base"
@@ -45,7 +46,7 @@
 		"ar300m16": {
 			"state": "develop",
 			"profile": "glinet_gl-ar300m-nor",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
@@ -53,7 +54,7 @@
 		"ar750": {
 			"state": "develop",
 			"profile": "glinet_gl-ar750",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet"
@@ -61,7 +62,7 @@
 		"x750": {
 			"state": "develop",
 			"profile": "glinet_gl-x750-nor",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "kmod-GobiNet kmod-GobiSerial gl-base-files-ar gl-bletool $basic $vpn $storage $usb $glinet -gl-qos gl-qos-internal gl-rtty gl-upload smstools3 ssmtp"
@@ -69,7 +70,7 @@
 		"usb150": {
 			"state": "develop",
 			"profile": "glinet_gl-usb150",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $glinet -mwan3 -gl-modem"
@@ -77,7 +78,7 @@
 		"ar300m": {
 			"state": "develop",
 			"profile": "glinet_gl-ar300m-nand",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet ath10k-firmware-qca9887 kmod-ath10k gl-tor"
@@ -86,7 +87,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "glinet_gl-ar750s-nor-nand",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet kmod-fast-classifier kmod-shortcut-fe gl-tor gl-upload gl-rtty luci luci-mod-rpc luci-base"
 		},
@@ -94,7 +95,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "gl-mt1300",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt7621_3.8",
 			"packages": "$basic $storage $usb $glinet $vpn -kmod-mt76x2 -kmod-mt7603 kmod-mt7615 gl-qos-internal -gl-qos gl-base-files-mt -wpad-basic -lighttpd-mod-openssl gl-ble-ubus gl-ble_cfg_router_telink gl-ipv6 gl-tor kmod-i2c-algo-bit kmod-i2c-core kmod-i2c-gpio kmod-i2c-gpio-custom i2c-tools libiwinfo-lua minidlna wireless-tools kmod-sdhci kmod-sdhci-mt7620 kmod-nft-core kmod-nft-nat kmod-nft-offload gl-upload gl-rtty gl-sdk4-mtk-wifi gl-sdk4-mtk-apcli -i2c-tools luci luci-mod-rpc luci-base"
 		},
@@ -102,7 +103,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "gl-mt300n-v2",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt76x8_3.8",
 			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-apcli mt76x8-uci2dat"
 		},
@@ -110,17 +111,17 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "microuter-n300",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt76x8_3.8",
 			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-apcli mt76x8-uci2dat"
 		},
 		"x300b": {
 			"state": "develop",
 			"profile": "glinet_gl-x300b-nor",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
-			"packages": "gl-base-files-ar gl-base-files-x300b gl-rs485 kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor   gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl smstools3 ssmtp"
+			"packages": "gl-base-files-ar gl-base-files-x300b -gl-rs485 gl-gps kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor   gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl smstools3 ssmtp"
 		},
 		"x300b-nand": {
 			"state": "develop",
@@ -142,7 +143,7 @@
 		"xe300": {
 			"state": "develop",
 			"profile": "glinet_gl-xe300-nor-nand",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor  gl-xe300-mcu gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 smstools3 ssmtp luci luci-mod-rpc luci-base"
@@ -158,7 +159,7 @@
 		"mv1000-emmc": {
 			"state": "release",
 			"profile": "gl-mv1000-emmc",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-mvebu-cortexa53_3.8",
 			"packages": "kmod-8192eu kmod-8812au kmod-8821cu kmod-8811au kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -kmod-GobiNet -kmod-GobiSerial -gl-qos gl-qos-internal gl-tertf gl-tor haveged usbutils wpa-cli AdGuardHome gl-agh-stats -gl-upload luci luci-mod-rpc luci-base"
@@ -166,7 +167,7 @@
 		"ap1300": {
 			"state": "release",
 			"profile": "QSDK_Premium",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty gl-ble-api gl-ble-daemon gl-agh-stats  kmod-gl-hw-wdt kmod-rtc-sd2068 kmod-i2c-gpio-custom gl-agh-stats smstools3 ssmtp luci luci-mod-rpc luci-base"
@@ -174,7 +175,7 @@
 		"b1300": {
 			"state": "release",
 			"profile": "QSDK_Premium",
-			"version": "3.212",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty luci luci-mod-rpc luci-base"
@@ -192,7 +193,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "QSDK_Premium",
-			"version": "3.212",
+			"version": "3.215",
             "files":"imagebuilder/3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5/files",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-b2200-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty gl-tor kmod-i2c-gpio-custom gl-agh-stats gl-ble_config_wifi gl-bletool gl-ble-ubus luci luci-mod-rpc luci-base"
@@ -201,21 +202,21 @@
 			"state": "release",
 			"disabled": 0,
 			"profile": "QSDK_Premium",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty gl-ble-api gl-ble-daemon gl-agh-stats luci luci-mod-rpc luci-base"
 		},
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-siflower-sf19a28_3.8",
-			"packages": "-gl-init-portal -gl-siderouter -kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic gl-sdk4-carrier-monitor $basic $vpn $glinet $siflower_driver"
+			"packages": "gl-sdk4-carrier-monitor -kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
 			},
 		"sft1200": {
 			"profile": "SF19A28-GL-SFT1200",
-			"version": "3.212",
+			"version": "3.215",
 			"imagebuilder": "3.8/openwrt-imagebuilder-siflower-sf19a28-nand_3.8",
-			"packages": "-gl-init-portal -gl-siderouter -kmod-leds-gpio blockdev gl-base-files-sf gl-tor $basic $vpn $storage $usb $glinet $siflower_driver"
+			"packages": "-kmod-leds-gpio blockdev gl-base-files-sf gl-tor $basic $vpn $storage $usb $glinet $siflower_driver"
 			},
 		"ax1800": {
 			"profile": "QSDK_Premium",
