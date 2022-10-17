@@ -7,6 +7,10 @@
 		"glinet": "-gl-airkiss gl-crond gl-s2s gl-portal gl-cloud-ui gl-route-policy gl-qos-internal gl-tertf gl-fw gl-base-files -gl-files-browser gl-firewall gl-modem gl-repeater gl-sdk gl-software gl-ui gl-util gl-wan-detect gl-wifi-core gl-monitor gl-ipv6 gl-rtty gl-upload gl-siderouter mudial",
 		"glinet_vixmini": "gl-sdk gl-base-files -gl-files-browser gl-firewall gl-repeater gl-software -gl-ui gl-ui-vixmini gl-util gl-wan-detect gl-wifi-core gl-monitor",
 		"basic_vixmini": "dnsmasq -wpad-mini iwinfo -kmod-nls-cp437 -kmod-nls-iso8859-1 -kmod-nls-utf8 kmod-nf-nathelper-extra -luci luci-mod-rpc ethtool fcgi lighttpd lighttpd-mod-openssl lighttpd-mod-access lighttpd-mod-cgi lighttpd-mod-expire lighttpd-mod-fastcgi lighttpd-mod-proxy unzip wpa-cli wpad bridge ip-full mwan3",
+		"base4":"-sudo kmod-usb-storage kmod-usb-uhci kmod-usb2 kmod-usb-ohci dnsmasq-full ip-full mwan3 iwinfo block-mount blkid ntfs-3g ntfs-3g-utils kmod-fs-ext4 kmod-fs-ntfs kmod-fs-vfat kmod-fs-exfat luci-base luci-mod-rpc luci-mod-admin-full luci-theme-bootstrap luci-app-firewall luci-app-opkg luci-proto-ppp libiwinfo-lua luci-proto-ipv6 rpcd-mod-rrdns luci-i18n-base-en luci-i18n-base-zh-cn luci-i18n-firewall-zh-cn luci-i18n-opkg-zh-cn",
+		"glinet4.0":"gl-sdk4-acl gl-sdk4-base-files gl-sdk4-cable gl-sdk4-carrier-monitor gl-sdk4-clients gl-sdk4-cloud gl-sdk4-cloud-batch-manage gl-sdk4-ddns gl-sdk4-dns gl-sdk4-firewall gl-sdk4-init-portal gl-sdk4-ipv6 gl-sdk4-lan gl-sdk4-log gl-sdk4-logread gl-sdk4-lua-utils gl-sdk4-macclone gl-sdk4-modem gl-sdk4-mqtt gl-sdk4-nas-utils gl-sdk4-nas-web gl-sdk4-netmode gl-sdk4-network gl-sdk4-network-diag gl-sdk4-ovpn-client gl-sdk4-ovpn-server gl-sdk4-plugins gl-sdk4-qos gl-sdk4-repeater gl-sdk4-rtty gl-sdk4-s2s gl-sdk4-switch-button gl-sdk4-system gl-sdk4-tethering gl-sdk4-uci gl-sdk4-upgrade gl-sdk4-utils gl-sdk4-vpn-policy gl-sdk4-webdav gl-sdk4-wg-client gl-sdk4-wg-server gl-sdk4-wifi kmod-gl-sdk4-hw-info kmod-gl-sdk4-tertf kmod-gl-sdk4-edgerouter-status gl-sdk4-edgerouter gl-sdk4-igmp gl-sdk4-init-portal gl-sdk4-led gl-sdk4-luci gl-sdk4-mwan3 gl-sdk4-sms-forward gl-sdk4-timer gl-sdk4-tor",
+		"ui4.0":"gl-sdk4-ui-adguardhome gl-sdk4-ui-adminpw gl-sdk4-ui-advanced gl-sdk4-ui-bridge gl-sdk4-ui-btnsettings gl-sdk4-ui-clients gl-sdk4-ui-cloud gl-sdk4-ui-core gl-sdk4-ui-dnsview gl-sdk4-ui-dynamicdns gl-sdk4-ui-firewallview gl-sdk4-ui-home gl-sdk4-ui-internet gl-sdk4-ui-ipv6 gl-sdk4-ui-lanip gl-sdk4-ui-login gl-sdk4-ui-logview gl-sdk4-ui-macclone gl-sdk4-ui-modemmanage gl-sdk4-ui-nasview gl-sdk4-ui-ovpnclient gl-sdk4-ui-ovpnserver gl-sdk4-ui-plugins gl-sdk4-ui-process gl-sdk4-ui-reset gl-sdk4-ui-sms gl-sdk4-ui-timezone gl-sdk4-ui-upgrade gl-sdk4-ui-vpndashboard gl-sdk4-ui-welcome gl-sdk4-ui-wgclient gl-sdk4-ui-wgserver gl-sdk4-ui-wireless gl-sdk4-ui-edgerouter gl-sdk4-ui-igmp gl-sdk4-ui-multiwan gl-sdk4-ui-overview gl-sdk4-ui-timedtask gl-sdk4-ui-torview gl-sdk4-ui-vlan",
+		"nas":"gl-sdk4-nas-utils gl-sdk4-nas-web gl-sdk4-webdav samba4-server samba4-libs samba4-utils libffmpeg-audio-dec minidlna blkid kmod-fs-ext4 kmod-fs-ntfs kmod-fs-vfat kmod-fs-exfat kmod-usb-storage-uas ntfs-3g ntfs-3g-utils dosfstools e2fsprogs",
 		"siflower_driver":"kmod-sf_smac kmod-sf_hnat kmod-sf_gmac kmod-sf_eswitch kmod-sf_netlink kmod-sfax8-factory-read kmod-mac80211 libnl hostapd-scripts e2fsprogs kmod-crypto-crc32c kmod-fuse kmod-lib-crc16 kmod-swconfig libacl libncurses libnet-1.2.x libnetfilter-cthelper libnetfilter-cttimeout libnetfilter-queue snapshot-tool libcares"
 
 	},
@@ -223,6 +227,14 @@
 			"version": "3.214",
 			"imagebuilder": "3.6/openwrt-imagebuilder-ipq-ipq60xx-QSDK_Premium_3.6",
 			"packages": "-wpad-openssl gl-ble-ubus gl-ble_cfg_ax1800 gl-agh-stats gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ipv6 bridge luci luci-mod-rpc kmod-i2c-gpio-custom gl-rtty kmod-mtdoops gl-sdk4-logread gl-init-portal"
+		},
+		"axt1800": {
+			"state": "develop",
+			"disabled": 0,
+			"profile": "glinet_axt1800",
+			"version": "4.1.0",
+			"imagebuilder": "4.1/openwrt-imagebuilder-ipq807x-ipq60xx_4.1",
+			"packages": "$base4 $glinet4.0 $ui4.0 $nas -wpad -dnsmasq kmod-gl-sdk4-fan wget-ssl kmod-inet-diag kmod-ipt-filter kmod-ipt-tproxy iptables-mod-filter iptables-mod-tproxy libpam kmod-wireguard-backport"
 		}
 	}
 }
