@@ -234,7 +234,7 @@
 			"profile": "glinet_axt1800",
 			"version": "4.1.0",
 			"imagebuilder": "4.1/openwrt-imagebuilder-ipq807x-ipq60xx_4.1",
-			"packages": "$base4 $glinet4.0 $ui4.0 $nas -wpad -dnsmasq kmod-gl-sdk4-fan wget-ssl kmod-inet-diag kmod-ipt-filter kmod-ipt-tproxy iptables-mod-filter iptables-mod-tproxy libpam kmod-wireguard-backport"
+			"packages": "$base4 $glinet4.0 $ui4.0 $nas -wpad -dnsmasq kmod-gl-sdk4-fan wget-ssl kmod-inet-diag kmod-ipt-filter kmod-ipt-tproxy iptables-mod-filter iptables-mod-tproxy kmod-wireguard-backport"
 		}
 	}
 }
