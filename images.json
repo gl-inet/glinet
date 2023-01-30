@@ -223,10 +223,12 @@
 			"packages": "-kmod-leds-gpio blockdev gl-base-files-sf gl-tor $basic $vpn $storage $usb $glinet $siflower_driver"
 			},
 		"ax1800": {
-			"profile": "QSDK_Premium",
-			"version": "3.214",
-			"imagebuilder": "3.6/openwrt-imagebuilder-ipq-ipq60xx-QSDK_Premium_3.6",
-			"packages": "-wpad-openssl gl-ble-ubus gl-ble_cfg_ax1800 gl-agh-stats gl-upload gl-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor rtty-openssl -lighttpd-mod-openssl gl-ipv6 bridge luci luci-mod-rpc kmod-i2c-gpio-custom gl-rtty kmod-mtdoops gl-sdk4-logread gl-init-portal"
+			"state": "develop",
+			"disabled": 0,
+			"profile": "glinet_ax1800",
+			"version": "4.1.0",
+			"imagebuilder": "4.1/openwrt-imagebuilder-ipq807x-ipq60xx_4.1",
+			"packages": "$base4 $glinet4.0 $ui4.0 $nas -wpad -dnsmasq wget-ssl kmod-inet-diag kmod-ipt-filter kmod-ipt-tproxy iptables-mod-filter iptables-mod-tproxy kmod-wireguard-backport -gl-sdk4-ui-vlan gl-ble_cfg_ax1800 i2c-tools gl-ble-ubus -gl-sdk4-ui-btnsettings -gl-sdk4-switch-button kmod-i2c-gpio-custom"
 		},
 		"axt1800": {
 			"state": "develop",
