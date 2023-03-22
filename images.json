@@ -122,7 +122,7 @@
 		"x300b": {
 			"state": "develop",
 			"profile": "glinet_gl-x300b-nor",
-			"version": "3.215",
+			"version": "3.216",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar gl-base-files-x300b -gl-rs485 gl-gps kmod-gl-hw-wdt $basic $vpn  $usb $glinet -gl-tor   gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl smstools3 ssmtp"
@@ -147,7 +147,7 @@
 		"xe300": {
 			"state": "develop",
 			"profile": "glinet_gl-xe300-nor-nand",
-			"version": "3.216",
+			"version": "3.215",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor  gl-xe300-mcu gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 smstools3 ssmtp luci luci-mod-rpc luci-base"
