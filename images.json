@@ -147,7 +147,7 @@
 		"xe300": {
 			"state": "develop",
 			"profile": "glinet_gl-xe300-nor-nand",
-			"version": "3.217",
+			"version": "3.218",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $storage $usb $glinet gl-xe300-mcu -gl-tor  gl-xe300-mcu gl-upload gl-ipv6 gl-rtty -wpad -wpad-basic wpad-openssl -lighttpd-mod-openssl kmod-usb-serial-ch341 smstools3 ssmtp luci luci-mod-rpc luci-base"
