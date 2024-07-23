@@ -74,7 +74,7 @@
 		"usb150": {
 			"state": "develop",
 			"profile": "glinet_gl-usb150",
-			"version": "3.216",
+			"version": "3.218",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-ath79-nand_3.8",
 			"packages": "gl-base-files-ar $basic $vpn $glinet -mwan3 -gl-modem"
@@ -197,7 +197,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "QSDK_Premium",
-			"version": "3.216",
+			"version": "3.218",
             "files":"imagebuilder/3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5/files",
 			"imagebuilder": "3.5/openwrt-imagebuilder-ipq-ipq40xx-QSDK_Premium_3.5",
 			"packages": "-wpad-openssl gl-upload gl-b2200-wifison gl-base-files-ipq $glinet -gl-qos gl-qos-internal $vpn $basic $storage $usb -wpad -wpa-cli -kmod-rt2800-usb -kmod-GobiNet -kmod-GobiSerial -kmod-usb-storage-uas gl-tor gl-rtty gl-tor kmod-i2c-gpio-custom gl-agh-stats gl-ble_config_wifi gl-bletool gl-ble-ubus luci luci-mod-rpc luci-base"
@@ -212,7 +212,7 @@
 		},
 		"sf1200": {
 			"profile": "SF19A28-GL-SF1200",
-			"version": "3.216",
+			"version": "3.218",
 			"imagebuilder": "3.8/openwrt-imagebuilder-siflower-sf19a28_3.8",
 			"packages": "gl-sdk4-carrier-monitor -kmod-leds-gpio -ubi-utils -gl-portal -gl-modem gl-base-files-sf  gl-ddns  gl-fw  gl-mqtt -gl-tertf gl-tertf-sf1200 gl-traffic $basic $vpn $glinet $siflower_driver"
 			},
