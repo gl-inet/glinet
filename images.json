@@ -115,7 +115,7 @@
 			"state": "develop",
 			"disabled": 0,
 			"profile": "microuter-n300",
-			"version": "3.216",
+			"version": "3.218",
 			"imagebuilder": "3.8/openwrt-imagebuilder-ramips-mt76x8_3.8",
 			"packages": "$glinet -gl-qos gl-qos-internal gl-base-files-mt -kmod-mt76 -kmod-mt76-core -kmod-mt7603 kmod-mt7628 $basic $vpn $storage $usb -wpa-cli -kmod-rt2800-usb -lighttpd-mod-openssl gl-sdk4-mtk-apcli mt76x8-uci2dat"
 		},
@@ -163,7 +163,7 @@
 		"mv1000-emmc": {
 			"state": "release",
 			"profile": "gl-mv1000-emmc",
-			"version": "3.216",
+			"version": "3.218",
 			"disabled": 0,
 			"imagebuilder": "3.8/openwrt-imagebuilder-mvebu-cortexa53_3.8",
 			"packages": "kmod-8192eu kmod-8812au kmod-8821cu kmod-8811au kmod-usb-gadget-eth gl-base-files-mv1000 $basic -kmod-usb-serial-cp210x -lighttpd-mod-openssl $vpn $storage $usb -kmod-rt2800-usb $glinet gl-s2s -kmod-GobiNet -kmod-GobiSerial -gl-qos gl-qos-internal gl-tertf gl-tor haveged usbutils wpa-cli AdGuardHome gl-agh-stats -gl-upload luci luci-mod-rpc luci-base"
